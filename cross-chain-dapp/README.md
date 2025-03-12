@@ -27,6 +27,8 @@ cross-chain-dapp
 │   └── README.md                   # Frontend documentation
 ├── scripts
 │   └── deploy.js                   # Deployment script for smart contracts
+├── tests
+│   └── example.test.js             # Example test file
 ├── docs
 │   ├── architecture.md             # Architecture overview
 │   ├── setup.md                    # Setup instructions
@@ -68,6 +70,20 @@ For deploying the smart contracts, run the deployment script:
 ```
 node scripts/deploy.js
 ```
+
+## Move Contract
+To compile the Move contract located in `contracts/Move`, install the Move CLI and run:
+```
+aptos move compile
+```
+Then deploy it to your desired network as needed.
+
+## Testing
+For testing, run:
+```
+npm test
+```
+This command executes the project's test suite for both Move and EVM contracts (if applicable).
 
 ## Documentation
 
