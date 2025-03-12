@@ -12,7 +12,6 @@ The dApp consists of the following main components:
    - Manages state and facilitates interactions with EVM-based contracts.
 
 ```move
-// filepath: /Users/wolfedgelabs/MoveBridge/cross-chain-dapp/contracts/Move/bridge.move
 module Bridge {
     use AggLayer::MessageReceiver;
     use AggLayer::MessageSender;
@@ -45,7 +44,6 @@ module Bridge {
         message: vector<u8>
     ) {
         // Handle incoming messages from EVM chain
-        // Implementation specific to your use case
     }
 }
 ```
@@ -58,7 +56,6 @@ module Bridge {
 ### 1. EVM Contract Components
 - **Bridge Contract**
 ```solidity
-// filepath: /Users/wolfedgelabs/MoveBridge/cross-chain-dapp/contracts/EVM/BridgeContract.sol
 pragma solidity ^0.8.0;
 
 import "@polygon-aggLayer/contracts/interfaces/IMessageReceiver.sol";
@@ -89,7 +86,6 @@ contract BridgeContract is IMessageReceiver {
         bytes calldata message
     ) external override {
         // Handle incoming messages from Move chain
-        // Implementation specific to your use case
     }
 }
 ```
@@ -117,13 +113,7 @@ graph LR
 ```
 
 ## Dependencies
-```json
-{
-    "dependencies": {
-        "@polygon-aggLayer/contracts": "^1.0.0",
-        "@polygon-aggLayer/sdk": "^1.0.0"
-    }
-}
+```npm i
 ```
 
 ## Conclusion
