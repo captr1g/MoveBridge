@@ -1,0 +1,13 @@
+[package]
+name = "MoveBridge"
+version = "0.0.1"
+authors = []
+
+[addresses]
+bridge = "0x12"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "main" }
+
+[dev-addresses]
+bridge = "0x12"
