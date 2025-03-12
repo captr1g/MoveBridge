@@ -1,0 +1,22 @@
+{
+  "name": "cross-chain-dapp",
+  "version": "1.0.0",
+  "description": "A cross-chain decentralized application integrating Movement Labs’ Move & EVM support with Polygon AggLayer for interoperability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node scripts/deploy.js",
+    "dev": "react-scripts start"
+  },
+  "dependencies": {
+    "ethers": "^5.0.0",
+    "web3": "^1.0.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
